@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Betting Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-6">
+          <h1 class="display-3 text-center">Betting Calculator</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row justify-content-md-center">
+        <div class="col-6">
+          <h2 class="display-5 text-center">Calculate Your Winnings</h2>
+          <form id="winningsForm">
+            <div class="form-group">
+              <label for="odds">Odds</label>
+              <input
+                type="number"
+                step="any"
+                class="form-control"
+                id="odds"
+                placeholder="Enter Your Odds"
+              />
+            </div>
+            <div class="form-group">
+              <label for="stake">Stake</label>
+              <input
+                type="number"
+                step="any"
+                class="form-control"
+                id="stake"
+                placeholder="Enter Your Stake"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-block btn-primary">
+              Submit
+            </button>
+          </form>
+
+          <div id="output1">
+            <div class="card text-white bg-primary mt-3">
+              <h3 class="text-center display-5 my-auto">
+                Your Return:
+                <span id="returnOutput"></span>
+              </h3>
+            </div>
+          </div>
+          <div id="output2">
+            <div class="card text-white bg-primary mt-3">
+              <h3 class="text-center display-5 my-auto">
+                Your Profit:
+                <span id="profitOutput"></span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row justify-content-md-center">
+        <div class="col-6">
+          <h2 class="display-5 text-center">
+            Calculate Fair Odds
+          </h2>
+          <form id="probabilityForm">
+            <div class="form-group">
+              <label for="probability">Implied probability</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">%</span>
+                </div>
+                <input
+                  type="number"
+                  step="any"
+                  class="form-control"
+                  id="probability"
+                  placeholder="Enter Probability"
+                />
+              </div>
+            </div>
+          </form>
+
+          <div id="output3">
+            <div class="card text-white bg-primary mt-3">
+              <h3 class="text-center display-5 my-auto">
+                Fair Odds:
+                <span id="fairOdds"></span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
