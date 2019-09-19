@@ -20,6 +20,7 @@ function calculateWinnings(e) {
 
 // Calculate Fair Odds
 const probability = document.querySelector("#probability");
+const fairOdds = document.querySelector("#fairOdds");
 
 document.querySelector("#output3").style.display = "none";
 
